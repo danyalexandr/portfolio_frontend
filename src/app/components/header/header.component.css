@@ -5,6 +5,7 @@
 #arg-programa{
     width: auto;
     height: 50px;
+    fill: black;
 }
 @media(min-width:700px){
 #fotoDePerfil{

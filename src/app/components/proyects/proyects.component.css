@@ -1,0 +1,11 @@
+p, h1, h2, img{
+    margin-left: 50px;
+}
+svg{
+    width:30px; 
+    height:30px;
+    fill: black;    
+}
+.btn.btn{
+    padding: 5px;
+}
