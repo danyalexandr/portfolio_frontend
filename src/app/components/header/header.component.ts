@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { AuthoService } from 'src/app/services/autho.service';
 
 @Component({
@@ -8,7 +9,7 @@ import { AuthoService } from 'src/app/services/autho.service';
 })
 export class HeaderComponent {
 
-  constructor( private auth: AuthoService){}
+  constructor( private auth: AuthoService, private router:Router){}
 
   ngOnInit():void{
 
@@ -20,5 +21,6 @@ export class HeaderComponent {
 
   public btnLogout():void{
     this.auth.logout();
+    this.router.navigate(["/home"]);
   }
 }
