@@ -8,12 +8,13 @@ import { Router } from '@angular/router';
 export class AuthoService {
 
   private strUrlApi:string;
+  private backendApi = 'https://portfolio-backend-danyalexandr.koyeb.app';
 
   constructor(private http: HttpClient, private router:Router) {
     this.strUrlApi = '../../assets/data/user.json';
    }
 
-   public loginSimple(email:string, pwd:string):void{
+   public loginSimple(username:string, password:string):void{
     this.http.get(this.strUrlApi).subscribe(
     (response:any) => { 
       if(response.token != null){

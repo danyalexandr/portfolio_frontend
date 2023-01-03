@@ -8,7 +8,7 @@ import { Experience } from '../model/experience';
 })
 export class ExperienceService {
 
-  private backendApi = 'https://portfolio-backend-danyalexandr.koyeb.app';
+  private backendApi:string = 'https://portfolio-backend-danyalexandr.koyeb.app';
 
   constructor(private http:HttpClient) { }
 

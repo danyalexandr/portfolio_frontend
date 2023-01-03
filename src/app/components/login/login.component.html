@@ -2,13 +2,13 @@
     <div class="col-sm-11 col-md-6 col-lg-4 mx-auto my-auto card">
         <form method="post">
             <div class="form-outline mb-4">
-                <label class="form-label" for="loginTxtEmail">Email</label>
-                <input type="email" id="loginTxtEmail" class="form-control" name="loginTxtEmail" [(ngModel)]="loginTxtEmail"/>
+                <label class="form-label" for="password">Email</label>
+                <input type="email" id="username" class="form-control" name="username" [(ngModel)]="username"/>
             </div>
 
             <div class="form-outline mb-4">
-                <label class="form.label" for="loginTxtPwd">Password</label>
-                <input type="password" id="loginTxtPwd" class="form-control" name="loginTxtPwd" [(ngModel)]="loginTxtPwd"/>
+                <label class="form.label" for="password">Password</label>
+                <input type="password" id="password" class="form-control" name="password" [(ngModel)]="password"/>
             </div>
 
             <button type="submit" class="btn btn-primary btn-block mb-4 col-12 col-sm-12 col-md-12" (click)="btnLogin()">
