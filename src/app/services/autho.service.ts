@@ -7,11 +7,11 @@ import { Router } from '@angular/router';
 })
 export class AuthoService {
 
-  private strUrlApi:string;
+  private strUrlApi:string = '../../assets/data/user.json';
   private backendApi = 'https://portfolio-backend-danyalexandr.koyeb.app';
 
   constructor(private http: HttpClient, private router:Router) {
-    this.strUrlApi = '../../assets/data/user.json';
+    
    }
 
    public loginSimple(username:string, password:string):void{

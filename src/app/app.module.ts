@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -21,6 +20,15 @@ import { EditExperienceComponent } from './components/experience/edit-experience
 import { EditHardAndSoftSkillComponent } from './components/hard-and-soft-skills/edit-hard-and-soft-skill.component';
 import { AddHardAndSoftSkillComponent } from './components/hard-and-soft-skills/add-hard-and-soft-skill.component';
 import { EditHeaderComponent } from './components/header/edit-header.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatProgressBarModule} from '@angular/material/progress-bar';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+
+
 
 
 @NgModule({
@@ -47,7 +55,11 @@ import { EditHeaderComponent } from './components/header/edit-header.component';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatProgressBarModule,
+    MatProgressSpinnerModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,7 @@
+<p>headers works</p>
+<input type="file" (change)="uploadImage($event)">
+
+<mat-slide-toggle [(ngModel)]="isChecked">Slide Toggle Checked: {{isChecked}}</mat-slide-toggle>
+<div class="images" *ngIf="isChecked">
+    <img [src]="image" *ngFor="let image of images"  width="200" >
+</div>
